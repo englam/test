@@ -9,9 +9,9 @@ pipeline {
           }
         }
 
-        stage('Check Network2') {
+        stage('print test') {
           steps {
-            sh 'ifconfig'
+            echo '123'
           }
         }
 
@@ -20,7 +20,7 @@ pipeline {
 
     stage('Test') {
       steps {
-        echo 'Test Finish'
+        echo 'Test Finish haha'
       }
     }
 
